@@ -4,23 +4,6 @@ import pandas as pd
 import argparse
 import os
 
-# Python script to execute a SQL statement and store the results in a CSV file.
-#
-# Usage:
-#   python3 run_sql.py [path_to_db] [path_to_sql] [path_to_csv]
-#
-# Where:
-#
-#   path_to_db: the path to the sqlite3 database file. default is 
-#               "data/movies.db"
-# 
-#   path_to_sql: the path to the file containing the sql query. default is 
-#               "sql/horror_movies.sql"
-# 
-#   path_to_csv: the path to the csv file that will be created with the results 
-#               of the query. default is "data/movies.csv"
-
-
 def get_paths() -> tuple:
     """Get the paths names from the arguments passed in
     @return a tuple containing (path_to_db, path_to_sql, path_to_csv)
